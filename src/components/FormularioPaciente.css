@@ -1,0 +1,128 @@
+/* Contenedor principal del formulario */
+div {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el título */
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Etiquetas */
+  label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Campos de entrada */
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  textarea,
+  button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  /* Estilos específicos para el área de texto */
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* Botón de envío */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para el input de archivo */
+  input[type="file"] {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 8px; /* Espacio entre la lupa y el campo de búsqueda */
+    width: 100%; /* Ocupa el ancho completo */
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1; /* Permite que el input ocupe el espacio restante */
+    min-width: 0; /* Evita que el input tenga un ancho mínimo predeterminado */
+    max-width: 100%; /* Limita el ancho al contenedor */
+}
+
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    div {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    input,
+    textarea,
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    label {
+      font-size: 12px;
+    }
+  
+    input,
+    textarea {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
